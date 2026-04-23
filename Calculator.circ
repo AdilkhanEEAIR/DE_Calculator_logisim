@@ -662,4 +662,49 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     </comp>
     <comp lib="3" loc="(500,200)" name="Multiplier"/>
   </circuit>
+  <circuit name="Divider">
+    <a name="circuit" val="Divider"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(570,300)" to="(610,300)"/>
+    <wire from="(570,260)" to="(610,260)"/>
+    <wire from="(610,290)" to="(610,300)"/>
+    <wire from="(610,260)" to="(610,270)"/>
+    <wire from="(650,350)" to="(700,350)"/>
+    <wire from="(610,290)" to="(630,290)"/>
+    <wire from="(610,270)" to="(630,270)"/>
+    <wire from="(650,300)" to="(650,350)"/>
+    <wire from="(650,210)" to="(650,260)"/>
+    <wire from="(670,280)" to="(730,280)"/>
+    <comp lib="0" loc="(570,300)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(730,280)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="label" val="Result"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="3" loc="(670,280)" name="Divider"/>
+    <comp lib="0" loc="(570,260)" name="Pin">
+      <a name="width" val="8"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(700,350)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+      <a name="label" val="Remainder"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(650,210)" name="Constant">
+      <a name="width" val="8"/>
+      <a name="value" val="0x0"/>
+    </comp>
+  </circuit>
 </project>
